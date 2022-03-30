@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- viewport scale-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Meta Keywords, Tags, Content -->
+	<meta name="keywords"
+		content="নিউজবাংলা, নিউজ বাংলা, news bangla, news bangla, newsbangla, newsbangla24, newsbangla24.com, new newspaper, bd newspaper, bangla news, online bangla news, online bangla news portal, latest online bangla news, bangla news portal, bangla newspaper, bengali newspaper, bangladesh newspaper, bangla newspaper">
+	<meta name="description"
+		content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.">
+	<meta name="author" content="oDesign Web Solution">
+	<!--Site Title-->
+	<title>news-protal</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+		rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css">
+	<!-- Spacing CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/spacing/spacing.min.css">
+	<!-- swiper-slider CSS -->
+	<link rel="stylesheet" type="text/css" href="vendor/swiper-slider/css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/sp-megamenu/css/sp-megamenu.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+</head>
+
+<body>
+	<header>
+		<!-- Starting-topbar -->
+		<div id="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="topbar-inner text-center">
+							<nav>
+								<ul>
+									<li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-android"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+									<li><a href="#"><i class="fa-solid fa-rss"></i></a></li>
+									<li><a href="#"><i class="fa-solid fa-envelope content-item"></i>সাবস্ক্রিপশন</a>
+									</li>
+									<li><a href="#"><i class="fa-solid fa-location-dot content-item"></i>ঢাকা মঙ্গলবার,
+											২৯ মার্চ
+											২০২২</a></li>
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="login va-middle">
+							<ul>
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											login
+										</a>
+
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											<div class="d-menu">
+												<form class="px-4 py-3">
+													<div class="mb-3">
+														<label for="exampleDropdownFormEmail1" class="form-label">Email
+															address</label>
+														<input type="email" class="form-control"
+															id="exampleDropdownFormEmail1"
+															placeholder="email@example.com">
+													</div>
+													<div class="mb-3">
+														<label for="exampleDropdownFormPassword1"
+															class="form-label">Password</label>
+														<input type="password" class="form-control"
+															id="exampleDropdownFormPassword1" placeholder="Password">
+													</div>
+													<div class="mb-3">
+														<div class="form-check">
+															<input type="checkbox" class="form-check-input"
+																id="dropdownCheck">
+															<label class="form-check-label" for="dropdownCheck">
+																Remember me
+															</label>
+														</div>
+													</div>
+													<button type="submit" class="btn btn-primary">Sign in</button>
+												</form>
+												<div class="dropdown-divider"></div>
+												<a class="dropdown-item" href="#">New around here? Sign up</a>
+												<a class="dropdown-item" href="#">Forgot password?</a>
+											</div>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+											data-bs-toggle="dropdown" aria-expanded="false">
+											Register
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											<form action="action_page.php">
+												<div class="container">
+													<h1>Register</h1>
+													<p>Please fill in this form to create an account.</p>
+													<hr>
+													<label for="fname">First Name</label>
+													<input type="text" id="fname" name="firstname"
+														placeholder="Your name..">
+
+													<label for="lname">Last Name</label>
+													<input type="text" id="lname" name="lastname"
+														placeholder="Your last name..">
+													<label for="email"><b>Email</b></label>
+													<input type="text" placeholder="Enter Email" name="email" id="email"
+														required>
+
+													<label for="psw"><b>Password</b></label>
+													<input type="password" placeholder="Enter Password" name="psw"
+														id="psw" required>
+
+													<label for="psw-repeat"><b>Repeat Password</b></label>
+													<input type="password" placeholder="Repeat Password"
+														name="psw-repeat" id="psw-repeat" required>
+													<hr>
+
+													<p>By creating an account you agree to our <a href="#">Terms &
+															Privacy</a>.</p>
+													<button type="submit" class="registerbtn">Register</button>
+												</div>
+
+												<div class="container signin">
+													<p>Already have an account? <a href="#">Sign in</a>.</p>
+												</div>
+											</form>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Eanding-topbar -->
+
+		<!-- Starting menubar -->
+		<div id="sp-menubar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-12">
+						<div class="logo va-middle">
+							<a href="index.html">
+								<img src="images/logo.jpg" alt="news">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-9 col-12 text-center">
+						<!-- Start SP Megamenu Block -->
+						<div class="toogle-btn d-lg-none">
+							<i class="fas fa-bars"></i>
+						</div>
+						<div id="sp-megamenu" data-expand-icon="fa-minus" data-collapse-icon="fa-plus">
+							<nav class="main-menu d-md-block">
+								<ul class="navbar">
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">হোম</a>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">সংবাদ</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">জাতীয়</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">অনুসন্ধান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজধানী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ইভেন্ট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজনীতি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আইন-অপরাধ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">শিক্ষা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">কৃষি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিজ্ঞান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ফলোআপ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিশেষ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আন্তর্জাতিক</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">দেশজুড়ে</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ঢাকা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">চট্টগ্রাম</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজশাহী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">সিলেট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">খুলনা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বরিশাল</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রংপুর</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ময়মনসিংহ</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">সংবাদ</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">জাতীয়</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">অনুসন্ধান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজধানী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ইভেন্ট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজনীতি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আইন-অপরাধ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">শিক্ষা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">কৃষি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিজ্ঞান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ফলোআপ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিশেষ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আন্তর্জাতিক</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">দেশজুড়ে</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ঢাকা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">চট্টগ্রাম</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজশাহী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">সিলেট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">খুলনা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বরিশাল</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রংপুর</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ময়মনসিংহ</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">সংবাদ</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">জাতীয়</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">অনুসন্ধান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজধানী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ইভেন্ট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজনীতি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আইন-অপরাধ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">শিক্ষা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">কৃষি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিজ্ঞান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ফলোআপ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিশেষ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আন্তর্জাতিক</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">দেশজুড়ে</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ঢাকা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">চট্টগ্রাম</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজশাহী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">সিলেট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">খুলনা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বরিশাল</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রংপুর</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ময়মনসিংহ</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">সংবাদ</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">জাতীয়</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">অনুসন্ধান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজধানী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ইভেন্ট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজনীতি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আইন-অপরাধ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">শিক্ষা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">কৃষি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিজ্ঞান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ফলোআপ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিশেষ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আন্তর্জাতিক</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">দেশজুড়ে</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ঢাকা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">চট্টগ্রাম</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজশাহী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">সিলেট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">খুলনা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বরিশাল</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রংপুর</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ময়মনসিংহ</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">সংবাদ</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">জাতীয়</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">অনুসন্ধান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজধানী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ইভেন্ট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজনীতি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আইন-অপরাধ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">শিক্ষা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">কৃষি</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিজ্ঞান</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ফলোআপ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বিশেষ</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">আন্তর্জাতিক</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">দেশজুড়ে</a>
+										<span class="menu-togglearrow d-md-none"><i class="fas"></i></span>
+										<div class="dropdown-inner">
+											<ul class="dropdown level1">
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ঢাকা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">চট্টগ্রাম</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রাজশাহী</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">সিলেট</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">খুলনা</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">বরিশাল</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">রংপুর</a>
+												</li>
+												<li class="menu-item">
+													<a href="#" class="menu-item-link">ময়মনসিংহ</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">
+											<img src="images/menu-img/video-menu.png" alt="video-item">
+										</a>
+
+									</li>
+									<li class="menu-item active">
+										<a href="#" class="menu-item-link main-item">
+											<img src="images/menu-img/photo-menu.png" alt="photo-item">
+										</a>
+
+									</li>
+
+								</ul>
+							</nav>
+						</div>
+						<!-- End SP Megamenu Block -->
+					</div>
+					<div class="col-lg-1">
+						<div class="menubar-inner va-middle">
+							<div class="menu-search">
+								<a href="#">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</a>
+							</div>
+							<div class="menu-tggle">
+								<a href="#"><i class="fa fa-bars"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Ending menubar -->
+		<div id="google-adds">
+			<div class="container">
+				<img src="images/adds1.gif" alt="adds">
+			</div>
+		</div>
+	</header>
+	<!-- Starting Main Content -->
+	<main>
+		<!-- Starting slidebar -->
+		<div id="slidebar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="slidebar-title">
+							<a href="#">রাশিয়া-ইউক্রেন যুদ্ধ</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="swiper my-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Adrian-Morrison.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Anthony-Morrison.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Billy-Gene.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Josh-Bezoni.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Adrian-Morrison.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Adrian-Morrison.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="slide-item">
+										<div class="slide-img">
+											<a href="https://www.youtube.com/watch?v=lm3yy29vbqM" target="_blank">
+												<img src="images/slider/Adrian-Morrison.png" alt="slide1">
+												<i class="fa-solid fa-circle-play  play-btn"></i>
+											</a>
+										</div>
+										<div class="slide-title">
+											<a href="#">
+												<h2>
+													রাশিয়ায় ‘সরকার বদল চায় না’ যুক্তরাষ্ট্র
+												</h2>
+												<p> বরিশালের আগৈলঝাড়া উপজেলা স্বাস্থ্য কমপ্লেক্স থেকে শিশু চুরি করে নিয়ে
+													যাওয়ার সময় হাতেনাতে ধরা পড়েছে এক......
+												</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide-nav">
+								<div class="slide-btn-next">
+									<a href="#"><i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="slide-btn-prev">
+									<a href="#"><i class="fa-solid fa-angle-left"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-lg-3"></div> -->
+				</div>
+
+			</div>
+		</div>
+		<!-- Ending slidebar -->
+		<section id="heading-news1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="news1-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/heading-news1/1.jpg" alt="শ্রীলঙ্কার অর্থনৈতিক মন্দার কারণ">
+										<p>রমজান সামনে রেখে অস্থির ডালের বাজার</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="news1-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/heading-news1/1.jpg" alt="শ্রীলঙ্কার অর্থনৈতিক মন্দার কারণ">
+										<p>রমজান সামনে রেখে অস্থির ডালের বাজার</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="news1-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/heading-news1/1.jpg" alt="শ্রীলঙ্কার অর্থনৈতিক মন্দার কারণ">
+										<p>রমজান সামনে রেখে অস্থির ডালের বাজার</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="news1-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/heading-news1/1.jpg" alt="শ্রীলঙ্কার অর্থনৈতিক মন্দার কারণ">
+										<p>রমজান সামনে রেখে অস্থির ডালের বাজার</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="news1-list">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/heading-news1/1.jpg" alt="শ্রীলঙ্কার অর্থনৈতিক মন্দার কারণ">
+										<p>রমজান সামনে রেখে অস্থির ডালের বাজার</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 px-0">
+						<div class="heading-news-center">
+							<div class="heading-news-center-img">
+								<img src="images/heading-news1/main.png" alt="main-center">
+							</div>
+							<div class="heading-news-center-text">
+								<h2>
+									<a href="#">ঈদের পরেই আন্দোলনে যাচ্ছে না বিএনপি</a>
+								</h2>
+								<p>করোনার তৃতীয় ঢেউয়ে বিধিনিষেধ দেয়ার আগে আগে বিএনপির নেতারা সরকার পতনের এক দফা আন্দোলনে
+									নামার কথা বারবারই বলে আসছিলেন। বিধিনিষেধ উঠে</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="heading-news1-box">
+							<div class="box1">
+								<div class="box-img">
+									<a href="#">
+										<img src="images/heading-news1/box1.png" alt="news-box">
+									</a>
+								</div>
+								<div class="box-title">
+									<a href="#">
+										<h4>পদ্মা সেতুর হিসাব মিলবে না যে সড়কে </h4>
+									</a>
+								</div>
+								<div class="hover-box">
+									<span>বাছাই</span>
+								</div>
+							</div>
+							<div class="box1 item2">
+								<div class="box-img">
+									<a href="#">
+										<img src="images/heading-news1/box2.png" alt="news-box">
+
+									</a>
+								</div>
+								<div class="box-title">
+									<a href="#">
+										<h4>নাটোরে পীযূষ বন্দ্যোপাধ্যায়</h4>
+									</a>
+								</div>
+								<div class="hover-box">
+									<span>বাছাই ভিডিও</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<!-- Ending Main Content -->
+
+	<footer>
+
+	</footer>
+	<!-- Starting menu-toggle-bar -->
+	<div class="menu-toggle-bar">
+		<div class="menu-toggle">
+			<div class="toggle-close-btn">
+				<a href="#"><i class="fas fa-times"></i></a>
+			</div>
+			<div class="menu-toggle-inner">
+				<nav>
+					<ul class="toggle-menu">
+						<li><a class="toggle-submenu-show" href="#"><i class="fa-solid fa-house-chimney"></i>হোম</a>
+						</li>
+						<li><a href="#"><i class="fa-solid fa-user"></i>আমাদের সম্পর্কে</a></li>
+						<li><a href="#"><i class="fa-solid fa-circle-info"></i>প্রাইভেসি পলিসি</a>
+						</li>
+						<li><a href="#"><i class="fa-solid fa-phone"></i>যোগাযোগ</a></li>
+						<li><a href="#"><i class="fa-solid fa-newspaper"></i>বিজ্ঞাপন</a></li>
+						<li><a href="#"><i class="fa-brands fa-facebook-f"></i>ফেসবুক</a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i>টুইটার</a></li>
+						<li><a href="#"><i class="fa-brands fa-youtube"></i>ভিডিও</a></li>
+						<li><a href="#"><i class="fa-brands fa-apple"></i>অ্যাপল (আইওএস)</a></li>
+						<li><a href="#"><i class="fa-brands fa-android"></i>অ‌্যান্ড্রয়েড</a></li>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- Eanding menu-toggle-bar -->
+	<!-- Starting Search Popup Panel -->
+	<div class="search-panel popup-hide">
+		<div class="btn-search-popup-close">
+			<a class="btn-popup-close">&#x2715;</a>
+		</div>
+		<div class="search-popup-inner">
+			<div class="search-popup-form">
+				<form action="#">
+					<input type="text" placeholder="Looking for...">
+					<button class="btn-major btn-green" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Ending Search Popup Panel -->
+
+
+
+
+
+
+
+
+	<!-- jQuery JS -->
+	<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- swiper-slider JS -->
+	<script type="text/javascript" src="vendor/swiper-slider/js/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="vendor/sp-megamenu/js/sp-megamenu.js"></script>
+	<!-- ISOtope JS -->
+	<script type="text/javascript" src="vendor/isotope/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="vendor/isotope/js/imagesloaded.pkgd.min.js"></script>
+	<!-- Theme JS -->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <textarea name="message" rows="5" class="sppb-form-control" placeholder="Message" required="required" style="margin-top: 0px; margin-bottom: 0px; height: 306px;"></textarea> -->
