@@ -54,5 +54,37 @@ jQuery(function ($) {
 			return direction;
 		}
 
+
+		// Isotop init
+		var gridfilter = $('#news-filter-content');
+		if (gridfilter.length) {
+			$('#news-filter-content').imagesLoaded(function () {
+				$('#news-filter-nav').on('click', 'button', function () {
+					var filterValue = $(this).attr('data-filter');
+					$grid.isotope({
+						filter: filterValue
+					});
+				});
+				var $grid = $('#news-filter-content').isotope({
+					itemSelector: '.news-filter-item',
+					percentPosition: true,
+					masonry: {
+						columnWidth: '.news-filter-item',
+					}
+				});
+			});
+		}
+
+		if ($('#news-filter-nav button').length) {
+			var projectfiler = $('#news-filter-nav button');
+			if (projectfiler.length) {
+				$('#news-filter-nav button').on('click', function (event) {
+					$(this).siblings('.active').removeClass('active');
+					$(this).addClass('active');
+					event.preventDefault();
+				});
+			}
+		}
+
 	});
 });

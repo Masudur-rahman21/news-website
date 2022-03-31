@@ -33,6 +33,7 @@ font-family: 'Montserrat', sans-serif;*/
 @darkGray: #444444;
 @white: #ffffff;
 @black: #000000;
+@hover: #b8b4b4;
 @Montserrat: 'Montserrat', sans-serif;
 @Lato: 'Lato', sans-serif;
 
@@ -131,35 +132,20 @@ ul li {
 /* 03. Custom CSS Classes
 -------------------------------------*/
 .primaryBtn {
-    background: transparent;
-    color: @white;
+    background: @majorColor;
     display: inline-block;
-    height: 46px;
-    line-height: 46px;
-    padding: 0 26px;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 300;
-    border-radius: 30px;
     border: 1px solid @white;
-
-    &.black {
-        background: @darkGray;
-    }
-
-    &.small {
-        height: 44px;
-        line-height: 44px;
-        padding: 0 20px;
-        font-size: 14px;
-        background: @darkGray;
-    }
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
 
     &:hover {
         background: @textColor;
         color: @white;
-        border: 1px solid transparent;
     }
 }
 
@@ -191,7 +177,7 @@ ul li {
 }
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
     position: relative;
     z-index: 0;
 }
@@ -250,7 +236,7 @@ section {
 #topbar {
     background: @majorColor;
     position: relative;
-    z-index: 9;
+    z-index: 99;
 
     .topbar-inner {
         nav {
@@ -412,6 +398,8 @@ section {
                     color: @majorColor;
                 }
             }
+
+
         }
 
         .menu-tggle {
@@ -438,7 +426,8 @@ section {
     width: 360px;
     height: 100%;
     padding-top: 20px;
-    background: #444;
+    background: #262989;
+    ;
     position: fixed;
     top: 0;
     right: -100%;
@@ -515,6 +504,10 @@ section {
                             text-transform: capitalize;
                             transition: all 0.3s ease;
 
+                            i {
+                                margin-right: 10px;
+                            }
+
                             &:hover {
                                 color: #9e9a9a;
                             }
@@ -556,6 +549,10 @@ section {
                                     border: 1px solid rgba(255, 255, 255, 0.3);
                                     z-index: 9999;
                                 }
+
+                                i {
+                                    margin-right: 10px;
+                                }
                             }
                         }
                     }
@@ -568,54 +565,58 @@ section {
 /*#.search-panel
 ..............................................................*/
 .search-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    transition: transform 0.8s ease, opacity 1.5s ease, visibility 1.5s ease;
-    background: #d4cfcfd1;
-    backdrop-filter: blur(12px);
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // z-index: 9;
+    // transform: translateX(0);
+    // opacity: 1;
+    // visibility: visible;
+    // transition: transform 0.8s ease,
+    //     opacity 1.5s ease,
+    //     visibility 1.5s ease;
+    // background: #d4cfcfd1;
+    // backdrop-filter: blur(12px);
 
     .search-popup-inner {
         position: absolute;
         width: 100%;
-        max-width: 1000px;
-        top: 50%;
+        max-width: 512px;
+        top: 120px;
         left: 50%;
-        transform: translate(-50%, -50%);
+        z-index: 9;
 
         .search-popup-form {
+            position: relative;
+
             form {
                 margin: 0 15px;
                 position: relative;
 
                 input[type="text"] {
                     width: 100%;
-                    height: 104px;
-                    line-height: 104px;
+                    height: 50px;
+                    line-height: 50px;
                     border: 0;
                     outline: 0;
                     padding: 0px 104px 0px 40px;
                     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
                     color: #181818;
-                    font-size: 32px;
+                    font-size: 18px;
                     font-weight: 300;
                 }
 
                 button[type="submit"] {
                     position: absolute;
                     top: 50%;
-                    right: 12px;
+                    right: 40px;
                     transform: translateY(-50%);
-                    width: 80px;
-                    height: 80px;
-                    line-height: 80px;
-                    font-size: 28px;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
                     background: @majorColor;
                     border: 1px solid @majorColor;
                     color: #ffffff;
@@ -633,15 +634,16 @@ section {
 
     .btn-search-popup-close {
         position: absolute;
-        right: 50px;
-        top: 50px;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
 
         .btn-popup-close {
             width: 36px;
             height: 36px;
             line-height: 32px;
             text-align: center;
-            font-size: 36px;
+            font-size: 30px;
             display: block;
             color: @majorColor;
             cursor: pointer;
@@ -667,7 +669,7 @@ section {
 -------------------------------------*/
 #google-adds {
     text-align: center;
-    padding: 30px 0px 30px 0;
+    padding: 20px 0px 20px 0;
 }
 
 /* 06. slidebar
@@ -679,10 +681,11 @@ section {
     .container {
         background: @majorColor;
         padding: 0 25px;
+        position: relative;
 
         .my-swiper {
 
-            padding: 30px 20px;
+            padding: 30px 0px;
 
         }
     }
@@ -771,7 +774,7 @@ section {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                right: 82px;
+                right: 0px;
                 width: 20px;
                 height: 40px;
                 line-height: 44px;
@@ -806,7 +809,7 @@ section {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                left: 82px;
+                left: 0px;
                 width: 20px;
                 height: 40px;
                 line-height: 44px;
@@ -837,7 +840,8 @@ section {
     }
 }
 
-// starting heading-news1
+/* 07. starting heading-news1
+-------------------------------------*/
 #heading-news1 {
     padding: 20px 0 0;
 
@@ -927,8 +931,31 @@ section {
             margin-bottom: 15px;
 
             .box-img {
-                a {
-                    img {}
+                position: relative;
+
+                .play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.3s ease;
+
+                    a {
+                        i {
+                            color: #ffffff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .play-btn {
+                        a {
+                            i {
+                                color: @majorColor;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -982,6 +1009,196 @@ section {
                 }
             }
 
+        }
+    }
+}
+
+/* 08. bg-secondary-accent
+-------------------------------------*/
+#bg-secondary-accent {
+    background: #F4F6FA;
+
+    .bg-secondary-btns {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 3px solid #052962;
+        margin: 0 10px;
+
+        .btns-group {
+            margin-right: 10px;
+        }
+
+        .btn-item {
+            margin-right: 10px;
+        }
+    }
+
+    .bg-secondary-accent-slide {
+        padding: 20px 0px;
+
+        .mySwiper {
+            position: relative;
+
+            .swiper-slide {
+                .slid-item {
+                    margin: 0 10px;
+                    background: white;
+                    box-shadow: 0 1px 1px 0 #d6d6d6;
+
+                    .item-img {}
+
+                    .slide-title {
+                        padding: 20px;
+
+                        h4 {
+                            margin: 0;
+
+                            a {
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #000000;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slide-nav {
+                .slide-btn-next {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    z-index: 9;
+
+                    a {
+                        width: 20px;
+                        height: 40px;
+                        line-height: 30px;
+                        background: #ffffff;
+                        border: 1px solid #ffffff;
+                        color: #000;
+                        text-align: center;
+                        padding: 5px;
+                        display: block;
+                        transition: all 0.3s ease;
+
+                        i {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                    }
+
+                    &:hover {
+                        a {
+                            background: @majorColor;
+                            color: #ffffff;
+                            border: 1px solid @majorColor;
+                        }
+                    }
+                }
+
+                .slide-btn-prev {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    z-index: 9;
+
+                    a {
+                        width: 20px;
+                        height: 40px;
+                        padding: 5px;
+                        line-height: 30px;
+                        background: #ffffff;
+                        border: 1px solid #ffffff;
+                        color: #000;
+                        text-align: center;
+                        display: block;
+                        font-size: 20px;
+                        transition: all 0.3s ease;
+
+                        i {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+
+                    }
+
+                    &:hover {
+                        a {
+                            background: @majorColor;
+                            color: #ffffff;
+                            border: 1px solid @majorColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 08. news-isotope1
+-------------------------------------*/
+#news-isotope1 {
+    .border-section {
+        border-bottom: 2px solid @majorColor;
+        display: flex;
+        justify-content: space-between;
+
+        .title-area {
+            a {
+                display: inline-block;
+                position: relative;
+                color: #fff;
+                background: @majorColor;
+                height: 40px;
+                padding: 0 20px;
+                line-height: 40px;
+                text-align: center;
+                text-transform: capitalize;
+                font-weight: 600;
+                font-size: 18px;
+                font-family: Kalpurush !important;
+                z-index: 2;
+
+                &::before {
+                    z-index: 1;
+                    content: "";
+                    top: 0;
+                    right: -8px;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid #990038;
+                    border-right: 8px solid transparent;
+                }
+            }
+        }
+
+        #news-filter-nav {
+            button {
+                background: unset;
+                border: unset;
+                box-shadow: none;
+                outline: none;
+                color: #444;
+                padding: 5px 7px;
+                margin: 0;
+                display: inline-block;
+                font-size: 15px;
+                line-height: 26px;
+                font-weight: 400;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: @majorColor;
+                }
+            }
         }
     }
 }
